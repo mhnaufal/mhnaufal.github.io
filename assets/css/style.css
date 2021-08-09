@@ -300,7 +300,7 @@ textarea.form-control {
     text-align: center;
 }
 .calltoaction {
-    /* background: url(../images/item-3.jpg); */
+    background: url(../images/item-6.jpg);
 	background-color: #D8E1E4;
 	background-repeat: no-repeat;
 	background-position: 0 0;
@@ -352,7 +352,7 @@ textarea.form-control {
 /* ---------------------------------------------- */
 
 #home {
-	background: url(../images/cover.jpg);
+	background: url(../images/item-5.jpg);
 	background-color: #222;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
