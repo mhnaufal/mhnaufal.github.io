@@ -1,0 +1,157 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[colorlinks=true,linkcolor=blue,anchorcolor=blue,citecolor=blue,filecolor=blue,menucolor=blue,runcolor=blue,urlcolor=blue]{hyperref}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+\vspace*{-40pt}
+
+    
+
+%==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+	{\Huge \scshape \textbf{Muhammad Naufal Pratama}}\\
+	\href{mailto:muhammadnaufalp@students.undip.ac.id}{muhammadnaufalp@students.undip.ac.id} $\cdot$ 082133617483 $\cdot$ \href{https://linkedin.com/in/mnpratamaa}{linkedin.com/in/mnpratamaa} $\cdot$ \href{https://github.com/mhnaufal}{github.com/mhnaufal}\\
+\end{center}
+
+Passionate in the world of technology with experience in website and software development especially on backend side as well as system programming and blockchain technology as hobbies\\
+
+%==== Education ====%
+\header{Education}
+\textbf{Universitas Diponegoro}\hfill Semarang, Jawa Tengah\\
+Degree in \textbf{Informatics} \textit{GPA: 3.84} \hfill 2019 - 2023 (Expected)\\
+\vspace{2mm}
+
+%==== Experience ====%
+\header{Experiences}
+\vspace{1mm}
+
+\textbf{IEEE SB-Undip Organization} \hfill Universitas Diponegoro\\
+\textit{Web Division Committe} \hfill July 2021 - Present\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Create and manage \href{https://edu.ieee.org/id-undip/}{IEEE SB-Undip} website using Wordpress and also organize website development training named IWT (IEEE Website Training)
+\end{itemize}
+\textbf{Azura Labs} \hfill Semarang, Jawa Tengah\\
+\textit{Backend Engineer Intern} \hfill Jan 2021 - Mar 2021\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Develop backend API using Laravel framework for a web-based project called \textquotesingle{}Butiko\textquotesingle{} which contains articles and activities carried out by the \textquotesingle{}\href{https://butiko.id/}{Butiko}\textquotesingle{} community
+\end{itemize}
+\textbf{Lab Assistant} \hfill Universitas Dipoengoro\\
+\textit{Programming Fundamental Lab Assistant} \hfill Aug 2020 - Des 2020\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Teaches basic programming on functional programming paradigm using Python
+\end{itemize}
+
+\header{Skills}
+\begin{tabular}{ l l }
+	Programming Skills:              & C, C++, Rust, Python, PHP, JavaScript, Go, SQL      \\
+	Programming Frameworks \& Tools: & Laravel, SailsJS, Git, PostgreSql, AWS, Insomnia, MySql, Heroku      \\
+	Other Skills:                    & Web Development, Software Engineering \\
+\end{tabular}
+\vspace{2mm}
+
+\header{Projects}
+{\textbf{COBLOS}} {\sl Laravel, Bootstrap, Github} \hfill \href{https://coblos.herokuapp.com/}{COBLOS}\\
+A survey web application to help companies manage their product surveys\\
+\vspace*{2mm}
+{\textbf{Siperpus}} {\sl Laravel, SailsJS, Bootstrap, Github} \hfill \href{http://sisperpus.herokuapp.com/}{sisperpus.com} | \href{https://pbp-siperpus.herokuapp.com/}{api}\\
+Library management system created using Laravel framework to fulfill the college project couserwork \\
+\vspace*{2mm}
+{\textbf{Anforom 2021}} {\sl Laravel, JavaScript, Github} \hfill \href{https://anforcom.com}{anforcom.com}\\
+Create, develop, and maintain the website for Anforcom which is a competition and seminar that is regularly held annually by the HMIF Undip\\
+\vspace*{2mm}
+{\textbf{Mulo}} {\sl NodeJS, SailsJS, Kotlin, Github} \hfill \href{https://mulo.app}{mulo.app}\\
+Build and develop backend API for Mulo which is a startup company focusing on empowering UMKM in Indonesia by providing an applications that can help manage UMKM activities and finances using blockchain technology\\
+\vspace*{2mm}
+{\textbf{Software Defect Prediction}} {\sl Python} \hfill \href{https://github.com/mhnaufal/Software-Defect-Finale/blob/main/reports/PAPER-Software%20Defect%20Prediction.pdf}{Paper}\\
+Research and explore the defects in a software using machine learning and deep learning algorithm such as, CNN, LSTM, and Random Forest\\
+\vspace*{2mm}
+{\textbf{RS NUMedika}} {\sl HTML, CSS, JavaScript} \hfill \href{http://rsnuwonosobo.com/}{RS NUMedika}\\
+Build landing page website for RS NUMedika Wonosobo\\
+\vspace*{2mm}
+
+\header{Certifications \& Courses}
+\textbf{Text Retrieval and Search Engines} \hfill University of Illinois offered through Coursera\\
+Learn about information and text retrieval and understand about how search engines work. \hfill \textit{Aug 2021}\\
+\vspace*{2mm}
+\textbf{Belajar Membuat Aplikasi Back-End untuk Pemula} \hfill Dicoding Indonesia\\
+Learn how to implement RESTfull API using HapiJS, a NodeJS framework for creating API. \hfill \textit{Jun 2021}\\
+\vspace*{2mm}
+\textbf{Belajar Dasar Pemrograman Javascript} \hfill Dicoding Indonesia\\
+Succeeded learn and implement JavaScript fundamental for web development. \hfill \textit{May 2021}\\
+\vspace*{2mm}
+\textbf{Belajar Dasar Pemrograman Python} \hfill Dicoding Indonesia\\
+Study on fundamental Python programming language. \hfill \textit{Mar 2021}\\
+\vspace*{2mm}
+\textbf{Cyber Security Essential} \hfill Cisco Networking Academy\\
+Describe the tactics, techniques, and procedures used by cyber criminals and obtain other knowledge in cyber security. \hfill \textit{Feb 2020}\\
+\vspace*{2mm}
+
+\ 
+\end{document}
