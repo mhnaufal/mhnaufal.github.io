@@ -1,0 +1,228 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[colorlinks=true,linkcolor=blue,anchorcolor=blue,citecolor=blue,filecolor=blue,menucolor=blue,runcolor=blue,urlcolor=blue]{hyperref}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+\vspace*{-40pt}
+
+%==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+	{\Huge \scshape \textbf{Muhammad Naufal Pratama}}\\
+	\href{mailto:muhammadnaufalp@students.undip.ac.id}{muhammadnaufalp@students.undip.ac.id} $\cdot$ \href{https://wa.me/6282133617483}{+62 82133617483} $\cdot$ \href{https://linkedin.com/in/mnpratamaa}{LinkedIn} $\cdot$ \href{https://github.com/mhnaufal}{Github} $\cdot$ \href{https://medium.com/@mprtmma}{Medium} $\cdot$ \href{https://mhnaufal.github.io/}{Web}\\
+\end{center}
+
+A highly passionate engineer in the technology field with lots of software engineering experience, especially on the Back-end side, with the extra ability of Full-stack, DevOps, and Machine learning-related stuff.\\
+\hfill \break
+
+%==== Experience ====%
+\header{Experiences}
+\vspace{1mm}
+
+\textbf{C++ Software Engineer Intern} \hfill Nodeflux\\
+\textit{Internship} \hfill August 2022 - December 2022\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Dealing against C++ in an internship as a C++ SWE intern at \href{https://www.nodeflux.io/}{Nodeflux}. Develop two surveillance camera analytic products that run on top of Docker and implement a dynamically loaded library in C++ for the final projects.
+	\item Tech: C++, Python, OpenCV, ONNX, Vegeta, Grafana, Prometheus, Docker \& Postman
+\end{itemize}
+
+\textbf{DevOps/SRE Intern} \hfill Fita\\
+\textit{Internship} \hfill June 2022 - August 2022\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Having internship as a DevOps/SRE intern at \href{https://fita.co.id/}{Fita (Telkomsel's subsidiary)} and Contributed to the GCP cloud armor setup and the Helm configuration, created a project dependency auto updater pipeline using Renovate, and last but not least, set up a VictoriaMetrics alerting.
+	\item Tech: GitLab CI/CD, GCP, Kubernetes, and Helm, Terraform, Grafana, \& VictoriaMetrics
+\end{itemize}
+
+\textbf{Backend Engineer Course} \hfill Studi Independen Kampus Merdeka \\
+\textit{Generasi GIGIH 2.0} \hfill Feb 2022 - July 2022\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Participate as a Backend Engineer and gain much insight into the \href{https://www.anakbangsabisa.org/generasi-gigih/}{Generasi GIGIH 2.0} program held by Yayasan Anak Bangsa Bisa (YABB) and developing a trash delivery system as the final project.
+	\item Tech: Ruby, Ruby On Rails \& Git
+\end{itemize}
+
+\textbf{Fullstack Engineer Intern} \hfill UPT Perpustakaan UNDIP \\
+\textit{Internship} \hfill Feb 2022 - June 2022\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Worked eagerly as a full-stack engineer to develop \href{http://template-surat-testing.herokuapp.com/}{an automated mail template platform} for helping library staff write an office letter without manually writing it through a word editor.
+	\item Tech: HTML, CSS, Bootstrap, PHP, Laravel, Redis, RabbitMQ, Git \& Heroku
+\end{itemize}
+
+\textbf{IEEE SB-Undip Organization} \hfill Universitas Diponegoro\\
+\textit{Web Division Committe} \hfill July 2021 - May 2022\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Initiate and manage \href{https://edu.ieee.org/id-undip/}{IEEE SB-Undip} the website using WordPress and coordinate website development training the IWT (IEEE Website Training).
+	\item Tech: WordPress
+\end{itemize}
+
+\textbf{Software Defect Prediction Research} \hfill Universitas Diponegoro\\
+\textit{University Research} \hfill March 2021 - October 2021\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Research and explore in-depth defects in software using machine learning and deep learning algorithms such as CNN, LSTM, and Random Forest from the experiments until the
+	\href{https://github.com/mhnaufal/Software-Defect-Finale/blob/main/reports/PAPER-Software%20Defect%20Prediction.pdf}{journal publications}.
+	\item Tech: Python, Keras, NumPy, Git, Machine learning \& Deep learning
+\end{itemize}
+
+\textbf{Backend Engineer Mulo} \hfill Mulo, Wonosobo\\
+\textit{Part-time Backend Engineer} \hfill Feb 2021 - Aug 2022\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Contribute to both the backend API and also the \href{https://play.google.com/store/apps/details?id=app.mulo}{android app} for \href{https://muloapp.id/}{Mulo}, which is a startup company focusing on empowering UMKM in Indonesia by providing an application that can help manage UMKM activities and finances using blockchain technology.
+	\item Tech: NodeJS, SailsJS, Kotlin, PostgreSQL, Insomnia, Git \& Heroku
+\end{itemize}
+
+\textbf{Backend Engineer Intern} \hfill Azura Labs, Semarang\\
+\textit{Internship} \hfill Jan 2021 - Mar 2021\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Develop backend REST API using Laravel for a web-based project called \textquotesingle{}Butiko\textquotesingle{}, which contains articles and activities carried out by the \textquotesingle{}\href{https://butiko.id/}{Butiko}\textquotesingle{} community.
+	\item Tech: PHP, Laravel, MySql, Insomnia \& Git
+\end{itemize}
+
+\textbf{Lab Assistant} \hfill Universitas Dipoengoro\\
+\textit{Fundamental of Programming Lab Assistant} \hfill Aug 2020 - Des 2020\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Educate and enlighten students about the fundamentals of functional programming using Python.
+	\item Tech: Python
+\end{itemize}
+
+%==== Education ====%
+\header{Education}
+\textbf{Universitas Diponegoro}\hfill Semarang, Jawa Tengah\\
+Majoring in \textbf{Informatics} \textit{GPA: 3.82 out of 4.00} \hfill 2019 - August 2023 (Expected)\\
+Taking a specialization in software engineering
+\vspace{2mm}
+
+%==== Projects ====%
+\header{Projects}
+{\textbf{COBLOS}} {\sl Laravel, Bootstrap, Git} \hfill \href{https://coblos.herokuapp.com/}{COBLOS}\\
+Contribute as the backend programmer in developing a survey web-based application that helps companies or individuals manage their surveys.\\
+\vspace*{2mm}
+
+{\textbf{Siperpus}} {\sl Laravel, SailsJS, Bootstrap, Git} \hfill \href{http://sisperpus.herokuapp.com/}{sisperpus} | \href{https://pbp-siperpus.herokuapp.com/}{API}\\
+Give an extraordinary contribution as the backend programmer for this project and great teamwork. Siperpus is a library management system developed using Laravel. \\
+\vspace*{2mm}
+
+{\textbf{Anforom 2021}} {\sl Laravel, JavaScript, Github} \hfill \href{https://anforcom.com}{Anforcom}\\
+Took charge as a backend programmer in creating, developing, and maintaining Anforcom's website, which is a competition and seminar that is held annually by the HMIF Undip.\\
+\vspace*{2mm}
+
+% {\textbf{Mulo}} {\sl NodeJS, SailsJS, Kotlin, Git} \hfill \href{https://muloapp.id/}{Mulo}\\
+% Develop backend API intensively for Mulo, which is a startup company focusing on empowering UMKM in Indonesia by providing an application that can help manage UMKM activities and finances using blockchain technology\\
+% \vspace*{2mm}
+
+% {\textbf{Software Defect Prediction}} {\sl Python} \hfill \href{https://github.com/mhnaufal/Software-Defect-Finale/blob/main/reports/PAPER-Software%20Defect%20Prediction.pdf}{Paper}\\
+% Research and explore in-depth defects in software using machine learning and deep learning algorithms such as CNN, LSTM, and Random Forest from the experiments until journal publications.\\
+% \vspace*{2mm}
+
+% {\textbf{RS NUMedika}} {\sl HTML, CSS, JavaScript} \hfill \href{http://rsnuwonosobo.com/}{RS NUMedika}\\
+% Improve the frontend landing page website for RS NUMedika Wonosobo.\\
+% \vspace*{2mm}
+
+\
+
+%==== Certifications ====%
+\header{Certifications \& Courses}
+\textbf{Fresh Graduate Academy Game Programming} \hfill Agate International \textit{June 2022}\\
+New experience learning about the basics of game programming from theory to hands-on implementation.
+\vspace*{2mm}
+
+\textbf{Text Retrieval and Search Engines} \hfill University of Illinois offered through Coursera \textit{Aug 2021}\\
+Digest knowledge about information and text retrieval and\\ grasp how a search engine works.
+\vspace*{2mm}
+
+% \textbf{Belajar Membuat Aplikasi Back-End untuk Pemula} \hfill Dicoding Indonesia \textit{June 2021}\\
+% Graduate marvelously on how to implement RESTful API using HapiJS,\\a NodeJS framework for creating API.
+% \vspace*{2mm}
+
+% \textbf{Belajar Dasar Pemrograman Javascript} \hfill Dicoding Indonesia\\
+% Succeeded in learning and implementing JavaScript fundamentals for web development. \hfill \textit{May 2021}\\
+% \vspace*{2mm}
+
+% \textbf{Belajar Dasar Pemrograman Python} \hfill Dicoding Indonesia\\
+% Study on fundamental Python programming language. \hfill \textit{Mar 2021}\\
+% \vspace*{2mm}
+
+\textbf{Cyber Security Essential} \hfill Cisco Networking Academy \textit{Feb 2020}\\
+Having a good understanding on the tactics, techniques, and procedures \\used by cyber criminals in cyber security world.
+\vspace*{2mm}
+
+%==== Skills ====%
+\header{Skills}
+\begin{tabular}{ l l }
+	Hard Skills:              & C++, Rust, Python, PHP, JavaScript, SQL,  Laravel, NodeJS, Postman, Heroku, Redis, \\ & RabbitMQ, Docker, Kubernetes, Helm, Terraform, GitLab CI/CD, Grafana, \\ & Prometheus, ONNX, CMake, Vegeta.\\
+	Soft Skills:                    & Analytical \& critical thinking and time management.\\
+\end{tabular}
+\vspace{2mm}
+
+\ 
+\end{document}
